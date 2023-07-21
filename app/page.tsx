@@ -1,5 +1,5 @@
 'use client'
-import { GradientBackgroundCon, Pipe1, Pipe2, Pipe3, Pipe4, PipeFlow, FooterContainer, FooterLink } from '@/components/QuoteGenerator/QuoteGeneratorElements'
+import { GradientBackgroundCon, Pipe1, Pipe2, Pipe3, Pipe4, PipeFlow, FooterContainer, FooterLink, QuoteGeneratorContainer, QuoteGeneratorTitle, QuoteGeneratorInnerContainer, QuoteGeneratorSubTitle, GenerateQuoteButton, GenerateQuoteButtonText, Block1, Block2 } from '@/components/QuoteGenerator/QuoteGeneratorElements'
 import React, { useState } from 'react'
 import Image from 'next/image'
 
@@ -10,6 +10,8 @@ export default function Home() {
     <>
       {/* Background */}
       <GradientBackgroundCon>
+        <Block1></Block1>
+        <Block2></Block2>
         <Pipe1>
           <PipeFlow></PipeFlow>
         </Pipe1>
@@ -24,9 +26,25 @@ export default function Home() {
         </Pipe4>
       </GradientBackgroundCon>
 
-      {/* Quote Generator Modal*/}
+      {/* Quote Generator Modal Pup-Up*/}
       {/* <QuoteGeneratorModal
       /> */}
+
+      <QuoteGeneratorContainer>
+        <QuoteGeneratorInnerContainer>
+          <QuoteGeneratorTitle>
+            Daily Inspiration Generator
+          </QuoteGeneratorTitle>
+          <QuoteGeneratorSubTitle>
+            Do <strong>YOU</strong> crave inspiration? Generate yourself a random inspirational quote! Quotes provided by <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes.io</FooterLink>
+          </QuoteGeneratorSubTitle>
+          <GenerateQuoteButton>
+            <GenerateQuoteButtonText onClick={null}>
+              Make a Quote...
+            </GenerateQuoteButtonText>
+          </GenerateQuoteButton>
+        </QuoteGeneratorInnerContainer>
+      </QuoteGeneratorContainer>
 
       
 
@@ -35,7 +53,7 @@ export default function Home() {
         <>
           Quotes Generated: {numberOfQuotes}
           <br/>
-          Developed by <FooterLink href="https://github.com/TallestMan98" target="_blank"> @SebBarrett</FooterLink>
+          Developed by <FooterLink href="https://github.com/TallestMan98" target="_blank" rel="noopener noreferrer"> @SebBarrett</FooterLink>
         </>
       </FooterContainer>
     </>
