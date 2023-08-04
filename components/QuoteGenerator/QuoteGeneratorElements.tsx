@@ -84,7 +84,7 @@ export const Pipe3 = styled.div`
   width: 8px;
   height: 60vh;
   position: fixed;
-  right: 10vw;
+  left: 90vw;
   top: 20vh;
   @media only screen and (max-width: 600px) {
     width: 0px;
@@ -100,7 +100,7 @@ export const Pipe4 = styled.div`
   width: 8px;
   height: 80vh;
   position: fixed;
-  right: 5vw;
+  left: 95vw;
   top: 10vh;
   @media only screen and (max-width: 600px) {
     border: 1px solid rgba( 255, 255, 255, 0.7 );
@@ -184,6 +184,7 @@ export const QuoteGeneratorInnerContainer = styled.div`
   left: 50%;
   transform: translate(-50%,-50%);
   position: absolute;
+  height: 70%;
   width: 100%;
 `;
 
@@ -216,8 +217,6 @@ export const GenerateQuoteButton = styled.div`
   width: 300px;
   border: 2px solid whitesmoke;
   border-radius: 15px;
-
-  //margin-top: 100px;
   position: relative;
   transition: 0.2s all ease-in-out;
   cursor: pointer;
@@ -225,7 +224,7 @@ export const GenerateQuoteButton = styled.div`
   transform-origin: center;
   top: 50px;
   @media only screen and (max-width: 600px) {
-    top: 20px;
+    top: 50px;
   }
 
   background: rgba( 0, 0, 50, 0.8 );

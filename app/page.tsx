@@ -39,7 +39,7 @@ export default function Home() {
             Do <strong>YOU</strong> crave inspiration? Generate yourself a random inspirational quote! Quotes provided by <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes.io</FooterLink>
           </QuoteGeneratorSubTitle>
           <GenerateQuoteButton>
-            <GenerateQuoteButtonText onClick={null}>
+            <GenerateQuoteButtonText>
               Make a Quote...
             </GenerateQuoteButtonText>
           </GenerateQuoteButton>
@@ -53,7 +53,7 @@ export default function Home() {
         <>
           Quotes Generated: {numberOfQuotes}
           <br/>
-          Developed by <FooterLink href="https://github.com/TallestMan98" target="_blank" rel="noopener noreferrer"> @SebBarrett</FooterLink>
+          Developed by <FooterLink href="https://github.com/TallestMan98" target="_blank" rel="noopener noreferrer">@SebBarrett</FooterLink>
         </>
       </FooterContainer>
     </>
