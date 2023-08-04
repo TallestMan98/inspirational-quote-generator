@@ -186,6 +186,9 @@ export const QuoteGeneratorInnerContainer = styled.div`
   position: absolute;
   height: 70%;
   width: 100%;
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+  }
 `;
 
 export const QuoteGeneratorTitle = styled.div`
