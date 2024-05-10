@@ -3,7 +3,7 @@ import Link from "next/link";
 //import Image from "next/image";
 
 export const GradientBackgroundCon = styled.div`
-  background: linear-gradient(to bottom,#ffbb1c, #9198e5); //#e66465
+  background: linear-gradient(to bottom,#e66465, #9198e5); //#e66465
   background-size: 300% 300%;
   height: 100vh;
   width: 100vw;
